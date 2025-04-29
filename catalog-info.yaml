@@ -1,8 +1,11 @@
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test
+  annotations:
+    backstage.io/kubernetes-id: nginx
 spec:
   type: service
-  owner: guest
+  owner: guests
   lifecycle: production
