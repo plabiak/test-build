@@ -5,7 +5,6 @@ metadata:
   name: test
   annotations:
     backstage.io/kubernetes-id: nginx
-    prometheus.io/rule: sum by (instance) (node_cpu_seconds_total)
     prometheus.io/alert: all
 spec:
   type: service
