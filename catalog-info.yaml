@@ -4,7 +4,8 @@ kind: Component
 metadata:
   name: test
   annotations:
-    backstage.io/kubernetes-id: nginx
+    aws.amazon.com/aws-codebuild-project-tags: app=backstage
+    aws.amazon.com/aws-codepipeline-tags: app=backstage
 spec:
   type: service
   owner: guests
