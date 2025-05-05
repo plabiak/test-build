@@ -5,7 +5,6 @@ metadata:
   name: test
   annotations:
     backstage.io/kubernetes-id: nginx
-    prometheus.io/alert: all
 spec:
   type: service
   owner: guests
