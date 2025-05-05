@@ -4,8 +4,9 @@ kind: Component
 metadata:
   name: test
   annotations:
-    aws.amazon.com/aws-codebuild-project-tags: app=backstage
-    aws.amazon.com/aws-codepipeline-tags: app=backstage
+    backstage.io/kubernetes-id: nginx
+    prometheus.io/rule: sum by (instance) (node_cpu_seconds_total)
+    prometheus.io/alert: all
 spec:
   type: service
   owner: guests
